@@ -9,6 +9,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 sudo yum check-update
 sudo yum install code -y
 sudo yum install chromium -y
+sudo yum install gnome-terminal -y
 sudo systemctl isolate graphical.target
 sudo systemctl set-default graphical.target
 rm '/etc/systemd/system/default.target'
