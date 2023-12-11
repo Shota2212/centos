@@ -10,7 +10,7 @@ sudo yum check-update
 sudo yum install code -y
 sudo yum install chromium -y
 sudo yum install gnome-terminal -y
-sudo systemctl isolate graphical.target
-sudo systemctl set-default graphical.target
 rm '/etc/systemd/system/default.target'
 ln -s '/usr/lib/systemd/system/graphical.target' '/etc/systemd/system/default.target'
+sudo systemctl isolate graphical.target
+sudo systemctl set-default graphical.target
